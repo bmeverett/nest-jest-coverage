@@ -20,7 +20,7 @@ describe('AppController', () => {
     });
 
     it('should return "getGoodbye"', () => {
-      expect(appController.getGoobye()).toBe('get Goodbye');
+      expect(appController.getGoobye()).toBe('getGoodbye');
     });
   });
 });
