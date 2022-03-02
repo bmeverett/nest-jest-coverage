@@ -13,4 +13,4 @@ jobs:
               uses: bahmutov/npm-install@v1
             - uses: ArtiomTr/jest-coverage-report-action@v2
               with:
-                  test-script: npm test:cov
+                  test-script: npm run test:cov
