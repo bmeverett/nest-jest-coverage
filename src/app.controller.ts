@@ -11,6 +11,6 @@ export class AppController {
   }
 
   getGoobye(): string {
-    return 'getGoobye';
+    return 'getGoodbye';
   }
 }
