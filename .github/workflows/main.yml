@@ -14,3 +14,11 @@ jobs:
             - uses: ArtiomTr/jest-coverage-report-action@v2
               with:
                   test-script: npm run test:cov
+            - name: TestCoverage
+              id: testCoverage
+              uses: anuraag016/Jest-Coverage-Diff@master
+              with:
+                fullCoverageDiff: false // defaults to false, if made true whole coverage report is commented with the diff
+                runCommand: "npx jest --coverage --collectCoverage=true --coverageDirectory='./' --coverageReporters='json-summary' --forceExit --detectOpenHandles test/.*test.*"
+                delta: 0.5
+                  
